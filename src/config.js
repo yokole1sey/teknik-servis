@@ -3,7 +3,7 @@ const CONFIG = {
   // Production ortamında otomatik tespit
   API_BASE_URL: window.location.hostname === 'localhost' ? 
     'http://localhost:3001' : 
-    'https://bilgisayar-teknik-servis-backend.onrender.com',
+    'https://teknik-servis.onrender.com',
   
   // API Endpoints
   get ENDPOINTS() {
