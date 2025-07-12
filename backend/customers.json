@@ -1,0 +1,156 @@
+[
+  {
+    "id": 4,
+    "adsoyad": "AHMET YILMAZ",
+    "telefon": "05365417179",
+    "mail": "",
+    "notlar": ""
+  },
+  {
+    "id": 3,
+    "adsoyad": "MEHMET YILMAZ",
+    "telefon": "05325417177",
+    "mail": "",
+    "notlar": ""
+  },
+  {
+    "id": 2,
+    "adsoyad": "YÜCEL YILMAZ",
+    "telefon": "05325417179",
+    "mail": "",
+    "notlar": ""
+  },
+  {
+    "id": 5,
+    "adsoyad": "ALİ KAYA",
+    "telefon": "05351234567",
+    "mail": "ali.kaya@email.com",
+    "notlar": "Düzenli müşteri"
+  },
+  {
+    "id": 6,
+    "adsoyad": "FATMA ÖZDEMİR",
+    "telefon": "05432345678",
+    "mail": "fatma.ozdemir@email.com",
+    "notlar": ""
+  },
+  {
+    "id": 7,
+    "adsoyad": "MURAT ŞAHIN",
+    "telefon": "05563456789",
+    "mail": "murat.sahin@email.com",
+    "notlar": "Toptan müşteri"
+  },
+  {
+    "id": 8,
+    "adsoyad": "AYŞE DENİZ",
+    "telefon": "05674567890",
+    "mail": "ayse.deniz@email.com",
+    "notlar": ""
+  },
+  {
+    "id": 9,
+    "adsoyad": "EMRE AKIN",
+    "telefon": "05385678901",
+    "mail": "emre.akin@email.com",
+    "notlar": "Kurumsal müşteri"
+  },
+  {
+    "id": 10,
+    "adsoyad": "ZEYNEP KORKMAZ",
+    "telefon": "05496789012",
+    "mail": "zeynep.korkmaz@email.com",
+    "notlar": ""
+  },
+  {
+    "id": 11,
+    "adsoyad": "BURAK YILDIZ",
+    "telefon": "05317890123",
+    "mail": "burak.yildiz@email.com",
+    "notlar": "VIP müşteri"
+  },
+  {
+    "id": 12,
+    "adsoyad": "SEDA ARSLAN",
+    "telefon": "05428901234",
+    "mail": "seda.arslan@email.com",
+    "notlar": ""
+  },
+  {
+    "id": 13,
+    "adsoyad": "ONUR GÜLER",
+    "telefon": "05539012345",
+    "mail": "onur.guler@email.com",
+    "notlar": "Öğrenci indirimli"
+  },
+  {
+    "id": 14,
+    "adsoyad": "ESİN POLAT",
+    "telefon": "05640123456",
+    "mail": "esin.polat@email.com",
+    "notlar": ""
+  },
+  {
+    "id": 15,
+    "adsoyad": "KEMAL TAŞ",
+    "telefon": "05351234568",
+    "mail": "kemal.tas@email.com",
+    "notlar": "Eski müşteri"
+  },
+  {
+    "id": 16,
+    "adsoyad": "DERYA KURT",
+    "telefon": "05462345679",
+    "mail": "derya.kurt@email.com",
+    "notlar": ""
+  },
+  {
+    "id": 17,
+    "adsoyad": "SERKAN YAVUZ",
+    "telefon": "05573456780",
+    "mail": "serkan.yavuz@email.com",
+    "notlar": "Garantili ürün tercihi"
+  },
+  {
+    "id": 18,
+    "adsoyad": "GÜLŞEN ÖZKAN",
+    "telefon": "05684567891",
+    "mail": "gulsen.ozkan@email.com",
+    "notlar": ""
+  },
+  {
+    "id": 19,
+    "adsoyad": "HAKAN BİLGİN",
+    "telefon": "05395678902",
+    "mail": "hakan.bilgin@email.com",
+    "notlar": "Acil servis müşterisi"
+  },
+  {
+    "id": 20,
+    "adsoyad": "NURTEN DOĞAN",
+    "telefon": "05316789013",
+    "mail": "nurten.dogan@email.com",
+    "notlar": ""
+  },
+  {
+    "id": 21,
+    "adsoyad": "UFUK ÇAKIR",
+    "telefon": "05427890124",
+    "mail": "ufuk.cakir@email.com",
+    "notlar": "Gaming müşteri"
+  },
+  {
+    "id": 22,
+    "adsoyad": "PINAR KOÇAK",
+    "telefon": "05538901235",
+    "mail": "pinar.kocak@email.com",
+    "notlar": ""
+  },
+  {
+    "id": 23,
+    "adsoyad": "TOLGA ERDOĞAN",
+    "telefon": "05649012346",
+    "mail": "tolga.erdogan@email.com",
+    "notlar": "İş yerinden alım"
+  }
+]

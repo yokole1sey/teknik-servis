@@ -1,0 +1,49 @@
+{
+  "name": "kariyer-teknik-servis",
+  "version": "1.0.0",
+  "description": "Kariyer Teknik Servis Yönetim Sistemi - Full Stack Web Uygulaması",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "cd backend && node server.js",
+    "dev": "cd backend && npm run dev",
+    "production": "cd backend && npm run production",
+    "install-deps": "cd backend && npm install",
+    "build": "echo 'No build needed'",
+    "pm2-start": "cd backend && pm2 start ecosystem.config.js --env production",
+    "pm2-stop": "cd backend && pm2 stop kariyer-backend",
+    "pm2-restart": "cd backend && pm2 restart kariyer-backend",
+    "pm2-delete": "cd backend && pm2 delete kariyer-backend",
+    "pm2-logs": "cd backend && pm2 logs kariyer-backend",
+    "pm2-status": "cd backend && pm2 status",
+    "deploy": "npm run install-deps && npm run pm2-start",
+    "update": "git pull && npm run install-deps && npm run pm2-restart"
+  },
+  "keywords": [
+    "teknik-servis",
+    "yönetim-sistemi",
+    "crm",
+    "stok-takip",
+    "müşteri-yönetimi",
+    "whatsapp-entegrasyonu",
+    "node.js",
+    "express"
+  ],
+  "author": "Kariyer Bilgisayar ve Güvenlik Sistemleri",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youruser/kariyer-teknik-servis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/youruser/kariyer-teknik-servis/issues"
+  },
+  "homepage": "https://github.com/youruser/kariyer-teknik-servis#readme",
+  "engines": {
+    "node": "18.x",
+    "npm": ">=8.0.0"
+  },
+  "directories": {
+    "backend": "backend",
+    "frontend": "src"
+  }
+} 

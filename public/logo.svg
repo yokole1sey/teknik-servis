@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f8cff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6ad1ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Ana Arka Plan Daire -->
+  <circle cx="20" cy="20" r="18" fill="url(#logoGradient)" stroke="#ffffff" stroke-width="1"/>
+  
+  <!-- İç Dişli Çark -->
+  <g fill="#ffffff" stroke="none">
+    <!-- Merkez Daire -->
+    <circle cx="20" cy="20" r="6" fill="#ffffff"/>
+    
+    <!-- Dişli Dişleri -->
+    <polygon points="20,4 22,8 18,8" />
+    <polygon points="36,20 32,18 32,22" />
+    <polygon points="20,36 18,32 22,32" />
+    <polygon points="4,20 8,22 8,18" />
+    
+    <!-- Çapraz Dişler -->
+    <polygon points="30.5,9.5 28,12 30,14 32.5,11.5" />
+    <polygon points="30.5,30.5 28,28 30,26 32.5,28.5" />
+    <polygon points="9.5,30.5 12,28 14,30 11.5,32.5" />
+    <polygon points="9.5,9.5 12,12 14,10 11.5,7.5" />
+  </g>
+  
+  <!-- İç Daire - Anahtarlar -->
+  <g fill="#4f8cff" stroke="none">
+    <circle cx="20" cy="20" r="4"/>
+    <!-- Anahtar Şekli -->
+    <rect x="19" y="16" width="2" height="8" rx="1"/>
+    <rect x="17" y="18" width="6" height="2" rx="1"/>
+  </g>
+  
+  <!-- Küçük Detaylar -->
+  <circle cx="20" cy="20" r="2" fill="#ffffff"/>
+</svg> 
