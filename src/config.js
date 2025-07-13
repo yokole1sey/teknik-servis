@@ -1,9 +1,20 @@
 // Frontend API Configuration
 const CONFIG = {
-  // Production ortamında otomatik tespit
-  API_BASE_URL: window.location.hostname === 'localhost' ? 
-    'http://localhost:3001' : 
-    'https://teknik-servis-backend.onrender.com',
+  // Production ortamında otomatik tespit ve localStorage kontrolü
+  API_BASE_URL: (() => {
+    // Önce localStorage'den kontrol et
+    const saved = localStorage.getItem('apiBaseUrl');
+    if (saved) return saved;
+    
+    // Yoksa hostname'e göre belirle
+    const baseUrl = window.location.hostname === 'localhost' ? 
+      'http://localhost:3001' : 
+      'https://teknik-servis-backend.onrender.com';
+    
+    // localStorage'a kaydet
+    localStorage.setItem('apiBaseUrl', baseUrl);
+    return baseUrl;
+  })(),
   
   // API Endpoints
   get ENDPOINTS() {
