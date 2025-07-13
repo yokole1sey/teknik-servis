@@ -378,33 +378,28 @@ app.post('/api/sirket-bilgi/reset', (req, res) => {
   res.json({ message: 'Şirket bilgileri sıfırlandı', sirketBilgi });
 });
 
-// Vercel serverless functions için export
-module.exports = app;
+// Sunucu başlatma - Render için optimize edilmiş
+const server = app.listen(config.port, config.host, () => {
+  console.log(`🚀 Backend API çalışıyor:`);
+  console.log(`   URL: http://${config.host}:${config.port}`);
+  console.log(`   Ortam: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`   CORS: ${JSON.stringify(config.cors.origin)}`);
+  console.log(`   Tarih: ${new Date().toLocaleString('tr-TR')}`);
+});
 
-// Local development için server başlatma
-if (process.env.NODE_ENV !== 'production') {
-  const server = app.listen(config.port, config.host, () => {
-    console.log(`🚀 Backend API çalışıyor:`);
-    console.log(`   URL: http://${config.host}:${config.port}`);
-    console.log(`   Ortam: ${process.env.NODE_ENV || 'development'}`);
-    console.log(`   CORS: ${JSON.stringify(config.cors.origin)}`);
-    console.log(`   Tarih: ${new Date().toLocaleString('tr-TR')}`);
+// Graceful shutdown - Production için güvenli kapatma
+process.on('SIGTERM', () => {
+  console.log('🔄 Sunucu kapatılıyor...');
+  server.close(() => {
+    console.log('✅ Sunucu güvenli şekilde kapatıldı');
+    process.exit(0);
   });
+});
 
-  // Graceful shutdown - Production için güvenli kapatma
-  process.on('SIGTERM', () => {
-    console.log('🔄 Sunucu kapatılıyor...');
-    server.close(() => {
-      console.log('✅ Sunucu güvenli şekilde kapatıldı');
-      process.exit(0);
-    });
+process.on('SIGINT', () => {
+  console.log('🔄 Sunucu kapatılıyor...');
+  server.close(() => {
+    console.log('✅ Sunucu güvenli şekilde kapatıldı');
+    process.exit(0);
   });
-
-  process.on('SIGINT', () => {
-    console.log('🔄 Sunucu kapatılıyor...');
-    server.close(() => {
-      console.log('✅ Sunucu güvenli şekilde kapatıldı');
-      process.exit(0);
-    });
-  });
-}
+});
