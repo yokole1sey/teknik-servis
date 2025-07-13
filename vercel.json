@@ -8,18 +8,6 @@
   ],
   "routes": [
     {
-      "src": "/api/customers",
-      "dest": "/api/customers.js"
-    },
-    {
-      "src": "/api/servis",
-      "dest": "/api/servis.js"
-    },
-    {
-      "src": "/api/stok",
-      "dest": "/api/stok.js"
-    },
-    {
       "src": "/(.*)",
       "dest": "src/$1"
     }
