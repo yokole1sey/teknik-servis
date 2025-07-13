@@ -4,11 +4,11 @@
   "description": "Kariyer Teknik Servis Yönetim Sistemi - Full Stack Web Uygulaması",
   "main": "backend/server.js",
   "scripts": {
-    "start": "cd backend && node server.js",
+    "start": "echo 'Frontend-only, no backend server needed'",
     "dev": "cd backend && npm run dev",
     "production": "cd backend && npm run production",
     "install-deps": "cd backend && npm install",
-    "build": "echo 'No build needed'",
+    "build": "echo 'Static site build complete'",
     "pm2-start": "cd backend && pm2 start ecosystem.config.js --env production",
     "pm2-stop": "cd backend && pm2 stop kariyer-backend",
     "pm2-restart": "cd backend && pm2 restart kariyer-backend",
